@@ -1,8 +1,11 @@
 <meta charset = "utf-8">
 <script>
-var dollar = 74, euro = 84, rouble = parseInt(prompt("Сколько рублей сконвертировать?" ));
+var dollar = 74.02, euro = 84.74, rouble = +prompt("Сколько рублей сконвертировать?" );
 var result1 = dollar*rouble, result2 = euro*rouble;
 var date = " 06.01.2021 ";
-alert(" Обмен рублей в доллары по курсу "+"на " + date + "составляет: " + result1);
-alert(" Обмен рублей в евро по курсу "+"на " + date + "составляет: " + result2);
+alert(
+	"Дата: " + date + "\n" +
+	rouble + "RUB = " + result1.toFixed(2) + "USD \n" +
+	rouble + "RUB = " + result2.toFixed(2) + "EURO "
+	);
 </script>
