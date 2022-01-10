@@ -1,0 +1,13 @@
+<meta charset = "utf-8">
+<script type = "text/javascript">
+var n = +prompt("Введите число");
+var sum = 0;
+while(isNaN(n)|| n<0){
+	document.write("Нужно ввести положительное число");
+}
+	for(var i = 0; i<=n; i++){
+	sum += i;
+	document.write(i + " ");
+	}
+	document.write("<br/>" + sum);
+</script>
